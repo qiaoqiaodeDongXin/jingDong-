@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="author" content="">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/register.css">
+    </head>
+    <body>
+    <nav>
+    	<img src="images/jslogo.png" height="100" width="374" alt="">
+    	<span>已有账号 ? <span>请登录</span></span>
+    </nav>
+    <!-- content部分 -->
+    <div class="content">
+    	<div class="conleft">
+           <form action="/user/register" method="post">
+    		    <div class="box">用&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名 <input type="text" name="username" placeholder="您的账户名和登录名"></div>
+    		    <div class="jiange"></div>
+    		    <div class="box">设 置 密 码 <input type="password" name="password" placeholder="建议至少使用两种自负组合"></div>
+    		    <div class="jiange"></div>
+    		    <div class="box">确 认 密 码 <input type="password" placeholder="请再次输入密码"></div>
+    		    <div class="jiange"></div>
+    		    <div class="box">中&nbsp;&nbsp;&nbsp;国 0086 ﹀<input type="text" name="phonenum"placeholder="建议使用常用手机"></div    >
+    		    <div class="jiange"></div>
+    		    <div class="box">验&nbsp;&nbsp;&nbsp;&nbsp;证&nbsp;&nbsp;&nbsp;&nbsp;码 <input type="text" placeholder    ="请输入验证码"><img class="yanzhengimage"src="images/yanzheng.png" height="48" width="110" alt=""></div>
+    		    <div class="jiange"></div>
+    		    <div class="box" >手机验证码 <input type="text" placeholder="请输入手机验证码"><img class="    yanzhengimage" src="images/huoqu.png" alt=""></div>
+    		    <div class="jiange"></div>
+    		    <!-- <div class="box redbutton">立即注册</div> -->
+                <input class="box redbutton" type="submit" value="立即注册">
+            </form>
+    	</div>
+    	<div class="conright">
+    		<img src="images/conright.png" height="144" width="259" alt="">
+    	</div>
+    </div>
+    <!-- 模态框（Modal） -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">教育</h4>
+                    </div>
+                    <div class="modal-body">在这里添加一些文本</div>
+                    <div class="modal-footer">                       
+                        <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal -->
+        </div>
+    </body>
+    <script src="scriptAndJQ/jquery.min.js"></script>
+    <script src="scriptAndJQ/bootstrap.min.js"></script>
+    <script src="scriptAndJQ/register.js"></script>
+</html>
